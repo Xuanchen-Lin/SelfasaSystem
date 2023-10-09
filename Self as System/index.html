@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xuanchen Lin_Self_as_a_System</title>
+</head>
+<style>
+
+div.gallery {
+padding-bottom: 10px;
+}
+
+div.gallery:hover {
+  border: 3px solid #FF6347;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 55px;
+  float: left;
+  width: 25%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+    background-image: url('images/self.gif');
+    height: 100vh;
+    width: 100% !important
+    background-position: left;
+    background-size: 1200%;
+    background-repeat: repeat;
+    display: grid
+    align-items: end;
+}
+
+.cool-headline1 {
+            font-size: 36px;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #FFD700, #FF6347);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: neon-glow 1s linear infinite;
+            text-align: center;
+            padding-bottom: %;
+        }
+@keyframes neon-glow {
+            0% {
+                text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+            }
+            50% {
+                text-shadow: 0 0 20px #FF6347, 0 0 30px #FF6347, 0 0 40px #FF6347;
+            }
+            100% {
+                text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+            }
+        }
+
+.cool-headline2 {
+            font-size: 18px;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #FFD700, #FF6347);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: neon-glow 1s linear infinite;
+            text-align: center;
+        }
+@keyframes neon-glow {
+            0% {
+                text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+            }
+            50% {
+                text-shadow: 0 0 20px #FF6347, 0 0 30px #FF6347, 0 0 40px #FF6347;
+            }
+            100% {
+                text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+            }
+        }
+
+</style>
+<body>
+
+
+<h2 class="cool-headline1">Self as a System /kəˈkɒf ə ni/</h2>
+
+<h4 class="cool-headline2">Xuanchen Lin</h4>
+
+<div class="clearfix"></div>
+
+<div style="text-align: center; font-size: 18px;
+font-family: 'Arial', sans-serif;
+background: linear-gradient(45deg, #FFD700, #FF6347);
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+animation: neon-glow 1s linear infinite;
+text-align: center">
+  <p>Click each image to play sound; click again to stop.</p>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+  
+
+    <img id="clickable-image" src="images/Barrow_AK.jpg" alt="Clickable Image" width="600" height="200">
+    <audio id="audio-player" src="sound/Shallow Sea.mp3"></audio>
+
+    <script>
+
+        const clickableImage = document.getElementById('clickable-image');
+        const audioPlayer = document.getElementById('audio-player');
+
+ 
+        clickableImage.addEventListener('click', () => {
+            // Check if audio is paused or ended, then play it
+            if (audioPlayer.paused || audioPlayer.ended) {
+                audioPlayer.play();
+            } else {
+                // If audio is playing, pause it
+                audioPlayer.pause();
+            }
+        });
+    </script>
+
+<div style="text-align: center; font-size: 14px;
+font-family: 'Arial', sans-serif;
+color: rgb(17, 152, 205);
+
+    <div class="desc">Barrow, AK</div>
+  </div>
+</div>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+
+    <img id="clickable-image2" src="images/Cruise_Ship.jpg" alt="Clickable Image" width="600" height="400">
+    <audio id="audio-player2" src="sound/Night And Day.mp3"></audio>
+
+    <script>
+
+        const clickableImage2 = document.getElementById('clickable-image2');
+        const audioPlayer2 = document.getElementById('audio-player2');
+
+ 
+        clickableImage2.addEventListener('click', () => {
+            // Check if audio is paused or ended, then play it
+            if (audioPlayer2.paused || audioPlayer2.ended) {
+                audioPlayer2.play();
+            } else {
+                // If audio is playing, pause it
+                audioPlayer2.pause();
+            }
+        });
+    </script>
+
+<div style="text-align: center; font-size: 14px;
+font-family: 'Arial', sans-serif;
+color: rgb(17, 152, 205);
+
+    <div class="desc">Cruise Ship</div>
+  </div>
+</div>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+
+    <img id="clickable-image3" src="images/Bangkok.jpg" alt="Clickable Image" width="600" height="400">
+    <audio id="audio-player3" src="sound/The Way You Look Tonight.mp3"></audio>
+
+    <script>
+
+        const clickableImage3 = document.getElementById('clickable-image3');
+        const audioPlayer3 = document.getElementById('audio-player3');
+
+ 
+        clickableImage3.addEventListener('click', () => {
+            // Check if audio is paused or ended, then play it
+            if (audioPlayer3.paused || audioPlayer3.ended) {
+                audioPlayer3.play();
+            } else {
+                // If audio is playing, pause it
+                audioPlayer3.pause();
+            }
+        });
+    </script>
+
+<div style="text-align: center; font-size: 14px;
+font-family: 'Arial', sans-serif;
+color: rgb(17, 152, 205);
+
+    <div class="desc">Bangkok</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+
+    <img id="clickable-image4" src="images/Tokyo.jpg" alt="Clickable Image" width="600" height="400">
+    <audio id="audio-player4" src="sound/Tokyo Dream.mp3"></audio>
+
+    <script>
+
+        const clickableImage4 = document.getElementById('clickable-image4');
+        const audioPlayer4 = document.getElementById('audio-player4');
+
+ 
+        clickableImage4.addEventListener('click', () => {
+            // Check if audio is paused or ended, then play it
+            if (audioPlayer4.paused || audioPlayer4.ended) {
+                audioPlayer4.play();
+            } else {
+                // If audio is playing, pause it
+                audioPlayer4.pause();
+            }
+        });
+    </script>
+
+<div style="text-align: center; font-size: 14px;
+font-family: 'Arial', sans-serif;
+color: rgb(17, 152, 205);
+
+    <div class="desc">Tokyo</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+
+    <img id="clickable-image5" src="images/Yokosuka.jpg" alt="Clickable Image" width="600" height="400">
+    <audio id="audio-player5" src="sound/Train.wav"></audio>
+
+    <script>
+
+        const clickableImage5 = document.getElementById('clickable-image5');
+        const audioPlayer5 = document.getElementById('audio-player5');
+
+ 
+        clickableImage5.addEventListener('click', () => {
+            // Check if audio is paused or ended, then play it
+            if (audioPlayer5.paused || audioPlayer5.ended) {
+                audioPlayer5.play();
+            } else {
+                // If audio is playing, pause it
+                audioPlayer5.pause();
+            }
+        });
+    </script>
+
+<div style="text-align: center; font-size: 14px;
+font-family: 'Arial', sans-serif;
+color: rgb(17, 152, 205);
+
+    <div class="desc">Yokosuka</div>
+  </div>
+</div>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+
+    <img id="clickable-image6" src="images/Charcoal.jpg" alt="Clickable Image" width="600" height="400">
+    <audio id="audio-player6" src="sound/pencil.mp3"></audio>
+
+    <script>
+
+        const clickableImage6 = document.getElementById('clickable-image6');
+        const audioPlayer6 = document.getElementById('audio-player6');
+
+ 
+        clickableImage6.addEventListener('click', () => {
+            // Check if audio is paused or ended, then play it
+            if (audioPlayer6.paused || audioPlayer6.ended) {
+                audioPlayer6.play();
+            } else {
+                // If audio is playing, pause it
+                audioPlayer6.pause();
+            }
+        });
+    </script>
+
+<div style="text-align: center; font-size: 14px;
+font-family: 'Arial', sans-serif;
+color: rgb(17, 152, 205);
+
+    <div class="desc">Drawing</div>
+  </div>
+</div>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+
+    <img id="clickable-image7" src="images/Beach scene.jpg" alt="Clickable Image" width="600" height="400">
+    <audio id="audio-player7" src="sound/Beach.mp3"></audio>
+
+    <script>
+
+        const clickableImage7 = document.getElementById('clickable-image7');
+        const audioPlayer7 = document.getElementById('audio-player7');
+
+ 
+        clickableImage7.addEventListener('click', () => {
+            // Check if audio is paused or ended, then play it
+            if (audioPlayer7.paused || audioPlayer7.ended) {
+                audioPlayer7.play();
+            } else {
+                // If audio is playing, pause it
+                audioPlayer7.pause();
+            }
+        });
+    </script>
+
+<div style="text-align: center; font-size: 14px;
+font-family: 'Arial', sans-serif;
+color: rgb(17, 152, 205);
+
+    <div class="desc">Chigasaki</div>
+  </div>
+</div>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+
+    <img id="clickable-image8" src="images/NYC.jpg" alt="Clickable Image" width="600" height="400">
+    <audio id="audio-player8" src="sound/siren.mp3"></audio>
+
+    <script>
+
+        const clickableImage8 = document.getElementById('clickable-image8');
+        const audioPlayer8 = document.getElementById('audio-player8');
+
+ 
+        clickableImage8.addEventListener('click', () => {
+            // Check if audio is paused or ended, then play it
+            if (audioPlayer8.paused || audioPlayer8.ended) {
+                audioPlayer8.play();
+            } else {
+                // If audio is playing, pause it
+                audioPlayer8.pause();
+            }
+        });
+    </script>
+
+<div style="text-align: center; font-size: 14px;
+font-family: 'Arial', sans-serif;
+color: rgb(17, 152, 205);
+
+    <div class="desc">NYC</div>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>
+
+
